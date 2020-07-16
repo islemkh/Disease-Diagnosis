@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="utf-8">
+    <title>Disease Diagnosis</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+    <!-- Favicons -->
+    <link href="{{url_for('static',filename="img/favicon.png")}}" rel="icon">
+    <link href="{{url_for('static',filename="img/apple-touch-icon.png")}}" rel="apple-touch-icon">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700" rel="stylesheet">
+    <!-- Bootstrap CSS File -->
+    <link href="{{url_for('static',filename="lib/bootstrap/css/bootstrap.min.css")}}" rel="stylesheet">
+    <!-- Libraries CSS Files -->
+     <link href="{{url_for('static',filename="lib/font-awesome/css/font-awesome.min.css")}}" rel="stylesheet">
+    <link href="{{url_for('static',filename="lib/animate/animate.min.css")}}" rel="stylesheet">
+    <link href="{{url_for('static',filename="lib/ionicons/css/ionicons.min.css")}}" rel="stylesheet">
+    <link href="{{url_for('static',filename="lib/owlcarousel/assets/owl.carousel.min.css")}}" rel="stylesheet"> 
+<!--     <link href="{{url_for('static',filename="lib/lightbox/css/lightbox.min.css")}}" rel="stylesheet">
+ -->    <!-- Main Stylesheet File -->
+    <link href="{{url_for('static',filename="css/home.css")}}" rel="stylesheet">
+
+  </head>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="/"><img src="{{url_for('static',filename="assets/n.png")}}"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="/">Home </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="home.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <header>
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner" role="listbox">
+        <div class="carousel-item active">
+          <div class="carousel-background">
+            <img src="{{url_for('static',filename="assets/web2.png")}}" alt=""></div>
+          <div class="carousel-caption d-none d-md-block" style="margin-top:4%;">
+            <center><h2 class="display-2" style="margin-left: 2%;"> Internet Medical Diagnosis Engine</h2>
+            <p class="lead">Everyone has a moment where they feel a twinge, or feel like they are coming down
+              with something, but are not sure if it warrants a call to the doctor, or a trip to the emergency room. 
+             </p></center>
+          <div class="bouttons" style="display: flex ;  flex-direction: row; margin-left: 25%;">
+          <a href="choose.html"><button  class="btn btn-large" style="background-color: #a1c240;"> Choose symptom!</button>
+          </a>
+          <a href="describe.html"><button  class="btn btn-large " style="background-color: #a1c240; margin-left: 50%;"> Describe symptom!</button>
+            </a>
+          
+        </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="carousel-background">
+            <img src="{{url_for('static',filename="assets/web3.png")}}" alt=""></div>
+          <div class="carousel-caption d-none d-md-block">
+            <h2 class="display-2" style="margin-left: 2%;"> Internet Medical Diagnosis Engine</h2>
+              <p class="lead">Click "Diagnose Me!" below to get started!</p>
+              <div class="bouttons" style="display: flex ;  flex-direction: row; margin-left: 25%;">
+                <a href="choose.html"><button  class="btn btn-large" style="background-color: #a1c240;"> Choose symptom!</button>
+                </a>
+                <a href="describe.html"><button  class="btn btn-large " style="background-color: #a1c240; margin-left: 50%;"> Describe symptom!</button>
+                  </a>
+                
+              </div>
+          </div>
+        </div>   
+        <div class="carousel-item" >
+            <div class="carousel-background">
+            <img src="{{url_for('static',filename="assets/web5.png")}}" alt=""></div>   
+          <div class="carousel-caption d-none d-md-block">
+            <h2 class="display-2" style="margin-left: 2%;"> Internet Medical Diagnosis Engine</h2>
+            <p class="lead">Using the diagnosis symptoms, we walk you through an intelligent
+              interview process to provide you with the most likely possible diagnoses, and suggestions on next steps.
+               
+             </p>
+             <div class="bouttons" style="display: flex ;  flex-direction: row; margin-left: 25%;">
+              <a href="choose.html"><button  class="btn btn-large" style="background-color: #a1c240;"> Choose symptom!</button>
+              </a>
+              <a href="describe.html"><button  class="btn btn-large " style="background-color: #a1c240; margin-left: 50%;"> Describe symptom!</button>
+                </a>
+              
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+    </div>
+  
+  </header>
+
+  
+          
+  <script src="{{url_for('static',filename="lib/jquery/jquery.min.js")}}">
+  </script>
+  <script src="{{url_for('static',filename="lib/jquery/jquery-migrate.min.js")}}">
+  </script>
+  <script src="{{url_for('static',filename="lib/bootstrap/js/bootstrap.bundle.min.js")}}">
+  </script>
+  <script src="{{url_for('static',filename="lib/easing/easing.min.js")}}">
+  </script>
+  <script src="{{url_for('static',filename="lib/superfish/hoverIntent.js")}}">
+  </script>
+  <script src="{{url_for('static',filename="lib/superfish/superfish.min.js")}}">
+  </script>
+  <script src="{{url_for('static',filename="lib/wow/wow.min.js")}}"></script>
+  <script src="{{url_for('static',filename="lib/waypoints/waypoints.min.js")}}">
+  </script>
+  <script src="{{url_for('static',filename="lib/counterup/counterup.min.js")}}">
+  </script>
+  <script src="{{url_for('static',filename="lib/owlcarousel/owl.carousel.min.js")}}">
+  </script>
+  <script src="{{url_for('static',filename="lib/isotope/isotope.pkgd.min.js")}}">
+  </script>
+  <script src="{{url_for('static',filename="lib/touchSwipe/jquery.touchSwipe.min.js")}}">
+  </script>
+  <script src="{{url_for('static',filename="lib/lightbox/js/lightbox.min.js")}}">
+  </script>
+
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="utf-8">
+    <title>Disease diagnosis</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+    <!-- Favicons -->
+    <link href="{{url_for('static',filename="img/favicon.png")}}" rel="icon">
+    <link href="{{url_for('static',filename="img/apple-touch-icon.png")}}" rel="apple-touch-icon">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700" rel="stylesheet">
+    <!-- Bootstrap CSS File -->
+    <link href="{{url_for('static',filename="lib/bootstrap/css/bootstrap.min.css")}}" rel="stylesheet">
+    <!-- Libraries CSS Files -->
+     <link href="{{url_for('static',filename="lib/font-awesome/css/font-awesome.min.css")}}" rel="stylesheet">
+    <link href="{{url_for('static',filename="lib/animate/animate.min.css")}}" rel="stylesheet">
+    <link href="{{url_for('static',filename="lib/ionicons/css/ionicons.min.css")}}" rel="stylesheet">
+    <link href="{{url_for('static',filename="lib/owlcarousel/assets/owl.carousel.min.css")}}" rel="stylesheet"> 
+<!--     <link href="{{url_for('static',filename="lib/lightbox/css/lightbox.min.css")}}" rel="stylesheet">
+ -->    <!-- Main Stylesheet File -->
+    <link href="{{url_for('static',filename="css/about.css")}}" rel="stylesheet">
+
+  </head>
+  <body>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="/"><img src="{{url_for('static',filename="assets/n.png")}}"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="/">Home                </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section class="about aos-init aos-animate" data-aos="fade-up"  >
+    <div class="container">
+      <class class="row" style="margin-top: 150px;">
+        <div class="col-lg-6" style="float:left;">
+            <img src="{{url_for('static',filename="assets/about.jpeg")}}" class="img-fluid" alt=""> 
+        </div> 
+        <div class="col-lg-6 pt-4 pt-lg-0"  style="float: right;">
+            <h3>Internet Medical Diagnosis Engine</h3>      
+            <p>
+              Everyone has a moment where they feel a twinge, or feel like they are coming down with something, but are not sure if it warrants a call to the doctor, 
+              or a trip to the emergency room. This usually results in a trip down the internet "rabbit-hole" in search of answers. We then waste hours or days convincing ourselves that we're dying of some obscure tropical disease, when we really just have
+               a common cold.
+              This application seeks to solve that problem. Using the Disease Diagnosis, we walk you through an intelligent interview process to provide you with the most likely possible diagnoses, and suggestions on next steps.
+            </p>
+            <ul>
+                <li><i class="icofont-check-circled"></i><b>phone : </b> 23 851 013</li>
+                <li><i class="icofont-check-circled"></i> <b>mail : </b>medicalDiagnosis@gmail.com</li>
+                <li><i class="icofont-check-circled"></i> <b>address : </b>tunis</li>
+
+              </ul>
+          </div>
+        </class>
+        
+      </div>
+
+    </div>
+  </section>
+
+ 
+<script src="{{url_for('static',filename="lib/jquery/jquery.min.js")}}">
+</script>
+<script src="{{url_for('static',filename="lib/jquery/jquery-migrate.min.js")}}">
+</script>
+<script src="{{url_for('static',filename="lib/bootstrap/js/bootstrap.bundle.min.js")}}">
+</script>
+<script src="{{url_for('static',filename="lib/easing/easing.min.js")}}">
+</script>
+<script src="{{url_for('static',filename="lib/superfish/hoverIntent.js")}}">
+</script>
+<script src="{{url_for('static',filename="lib/superfish/superfish.min.js")}}">
+</script>
+<script src="{{url_for('static',filename="lib/wow/wow.min.js")}}"></script>
+<script src="{{url_for('static',filename="lib/waypoints/waypoints.min.js")}}">
+</script>
+<script src="{{url_for('static',filename="lib/counterup/counterup.min.js")}}">
+</script>
+<script src="{{url_for('static',filename="lib/owlcarousel/owl.carousel.min.js")}}">
+</script>
+<script src="{{url_for('static',filename="lib/isotope/isotope.pkgd.min.js")}}">
+</script>
+<script src="{{url_for('static',filename="lib/touchSwipe/jquery.touchSwipe.min.js")}}">
+</script>
+<script src="{{url_for('static',filename="lib/lightbox/js/lightbox.min.js")}}">
+</script>   
+  </body>
+</html>

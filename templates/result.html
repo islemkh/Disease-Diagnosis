@@ -1,0 +1,149 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<link href="{{ url_for('static', filename='css/styleResult.css') }}" rel="stylesheet" type="text/css" />
+		<meta charset="utf-8">
+		<title>Disease diagnosis</title>
+		<meta content="width=device-width, initial-scale=1.0" name="viewport">
+		<meta content="" name="keywords">
+		<meta content="" name="description">
+		<!-- Favicons -->
+		<link href="{{url_for('static',filename="img/favicon.png")}}" rel="icon">
+		<link href="{{url_for('static',filename="img/apple-touch-icon.png")}}" rel="apple-touch-icon">
+		<!-- Google Fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700" rel="stylesheet">
+		<!-- Bootstrap CSS File -->
+		<link href="{{url_for('static',filename="lib/bootstrap/css/bootstrap.min.css")}}" rel="stylesheet">
+		<!-- Libraries CSS Files -->
+		 <link href="{{url_for('static',filename="lib/font-awesome/css/font-awesome.min.css")}}" rel="stylesheet">
+		<link href="{{url_for('static',filename="lib/animate/animate.min.css")}}" rel="stylesheet">
+		<link href="{{url_for('static',filename="lib/ionicons/css/ionicons.min.css")}}" rel="stylesheet">
+		<link href="{{url_for('static',filename="lib/owlcarousel/assets/owl.carousel.min.css")}}" rel="stylesheet"> 
+	<!--     <link href="{{url_for('static',filename="lib/lightbox/css/lightbox.min.css")}}" rel="stylesheet">
+	 -->    <!-- Main Stylesheet File -->
+		
+	  </head>
+	
+<body>
+	<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+		<div class="container">
+		  <a class="navbar-brand" href="/"><img src="{{url_for('static',filename="assets/n.png")}}"></a>
+		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			  </button>
+		  <div class="collapse navbar-collapse" id="navbarResponsive">
+			<ul class="navbar-nav ml-auto">
+			  <li class="nav-item active">
+				<a class="nav-link" href="/">Home </a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" href="about.html">About</a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" href="home.html">Contact</a>
+			  </li>
+			</ul>
+		  </div>
+		</div>
+	  </nav>
+
+	<!-- predict the disease name -->
+	<div class="header_area" style="margin-top: 150px;">
+        <div class="main_wrap">
+          <div class="header_bg">
+			<div class="header_text_area">
+				<div class="header_text_mar">
+				
+	<div class="container" style="margin-top: 150px;" name="my_prediction">	
+		<h1> Diagnostic Resultat</h1>
+					{% if prediction == 0%}
+					<p >Emotional pain</p>
+					{% elif prediction == 1%}
+					<p >Hair falling out</p>
+					{% elif prediction == 2%}
+					<p >Heart hurts</p>
+					{% elif prediction == 3%}
+					<p >Infected wound</p>
+					{% elif prediction == 4%}
+					<p >Foot ache</p>
+					{% elif prediction == 5%}
+					<p >Shoulder pain</p>
+					{% elif prediction == 6%}
+					<p >Injury from sports</p>
+					{% elif prediction == 7%}
+					<p >Skin issue</p>
+					{% elif prediction == 8%}
+					<p >Stomach ache</p>
+					{% elif prediction == 9%}
+					<p >Knee pain</p>
+					{% elif prediction == 10%}
+					<p >Joint pain</p>
+					{% elif prediction == 11%}
+					<p >Hard to breath</p>
+					{% elif prediction == 12%}
+					<p >Head ache</p>
+					{% elif prediction == 13%}
+					<p >Body feels weak</p>
+					{% elif prediction == 14%}
+					<p >Feeling dizzy</p>
+					{% elif prediction == 15%}
+					<p >Back pain</p>
+					{% elif prediction == 16%}
+					<p >Open wound</p>
+					{% elif prediction == 17%}
+					<p >Internal pain</p>
+					{% elif prediction == 18%}
+					<p >Blurry vision</p>
+					{% elif prediction == 19%}
+					<p >Acne</p>
+					{% elif prediction == 20%}
+					<p >Muscle pain</p>
+					{% elif prediction == 21%}
+					<p >Neck pain</p>
+					{% elif prediction == 22%}
+					<p >Cough</p>
+					{% elif prediction == 23%}
+					<p >Ear ache</p>
+					{% elif prediction == 24%}
+					<p >Feeling cold</p>
+					{% else %}
+					<p >Not Found</p>
+					{% endif %}
+						
+					</div>
+				</p>
+								</div>
+			</div>
+		</div>
+	</div>
+</div>	
+
+         
+<script src="{{url_for('static',filename="lib/jquery/jquery.min.js")}}">
+</script>
+<script src="{{url_for('static',filename="lib/jquery/jquery-migrate.min.js")}}">
+</script>
+<script src="{{url_for('static',filename="lib/bootstrap/js/bootstrap.bundle.min.js")}}">
+</script>
+<script src="{{url_for('static',filename="lib/easing/easing.min.js")}}">
+</script>
+<script src="{{url_for('static',filename="lib/superfish/hoverIntent.js")}}">
+</script>
+<script src="{{url_for('static',filename="lib/superfish/superfish.min.js")}}">
+</script>
+<script src="{{url_for('static',filename="lib/wow/wow.min.js")}}"></script>
+<script src="{{url_for('static',filename="lib/waypoints/waypoints.min.js")}}">
+</script>
+<script src="{{url_for('static',filename="lib/counterup/counterup.min.js")}}">
+</script>
+<script src="{{url_for('static',filename="lib/owlcarousel/owl.carousel.min.js")}}">
+</script>
+<script src="{{url_for('static',filename="lib/isotope/isotope.pkgd.min.js")}}">
+</script>
+<script src="{{url_for('static',filename="lib/touchSwipe/jquery.touchSwipe.min.js")}}">
+</script>
+<script src="{{url_for('static',filename="lib/lightbox/js/lightbox.min.js")}}">
+</script>
+</body>
+</html>

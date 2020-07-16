@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="utf-8">
+    <title>Disease diagnosis</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+    <!-- Favicons -->
+    <link href="{{url_for('static',filename="img/favicon.png")}}" rel="icon">
+    <link href="{{url_for('static',filename="img/apple-touch-icon.png")}}" rel="apple-touch-icon">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700" rel="stylesheet">
+    <!-- Bootstrap CSS File -->
+    <link href="{{url_for('static',filename="lib/bootstrap/css/bootstrap.min.css")}}" rel="stylesheet">
+    <!-- Libraries CSS Files -->
+     <link href="{{url_for('static',filename="lib/font-awesome/css/font-awesome.min.css")}}" rel="stylesheet">
+    <link href="{{url_for('static',filename="lib/animate/animate.min.css")}}" rel="stylesheet">
+    <link href="{{url_for('static',filename="lib/ionicons/css/ionicons.min.css")}}" rel="stylesheet">
+    <link href="{{url_for('static',filename="lib/owlcarousel/assets/owl.carousel.min.css")}}" rel="stylesheet"> 
+<!--     <link href="{{url_for('static',filename="lib/lightbox/css/lightbox.min.css")}}" rel="stylesheet">
+ -->    <!-- Main Stylesheet File -->
+    <link href="{{url_for('static',filename="css/home.css")}}" rel="stylesheet">
+
+  </head>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="/"><img src="{{url_for('static',filename="assets/n.png")}}"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="/">Home </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="home.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+<body>
+<div class="main" style="margin-top: 150px;">
+<form class="symptom-entry" method='POST'  action="describe">
+    <label for="enter-symptoms" class="flow-text active">
+      Tell me a little bit about your symptoms. 
+       Don't worry about using fancy medical words if you don't know them - I can understand basic natural language.  However, you should be as specific as possible.  The phrase "I feel sick" may be too generic, but "my stomach is upset" or "I feel like vomiting" will get you better results.</label><br>
+    <ul id="errors" style="display: none;"></ul>
+    <textarea name="message" placeholder="Enter symptoms" id="enter-symptoms" required="" spellcheck="false"></textarea><br>
+    <button type="submit" name="submit-symptoms" id="submit-symptoms" data-clickable="submitSymptoms" class="btn btn-large">Submit Symptoms</button>
+  </form>
+</div>
+
+<script src="{{url_for('static',filename="lib/jquery/jquery.min.js")}}">
+</script>
+<script src="{{url_for('static',filename="lib/jquery/jquery-migrate.min.js")}}">
+</script>
+<script src="{{url_for('static',filename="lib/bootstrap/js/bootstrap.bundle.min.js")}}">
+</script>
+<script src="{{url_for('static',filename="lib/easing/easing.min.js")}}">
+</script>
+<script src="{{url_for('static',filename="lib/superfish/hoverIntent.js")}}">
+</script>
+<script src="{{url_for('static',filename="lib/superfish/superfish.min.js")}}">
+</script>
+<script src="{{url_for('static',filename="lib/wow/wow.min.js")}}"></script>
+<script src="{{url_for('static',filename="lib/waypoints/waypoints.min.js")}}">
+</script>
+<script src="{{url_for('static',filename="lib/counterup/counterup.min.js")}}">
+</script>
+<script src="{{url_for('static',filename="lib/owlcarousel/owl.carousel.min.js")}}">
+</script>
+<script src="{{url_for('static',filename="lib/isotope/isotope.pkgd.min.js")}}">
+</script>
+<script src="{{url_for('static',filename="lib/touchSwipe/jquery.touchSwipe.min.js")}}">
+</script>
+<script src="{{url_for('static',filename="lib/lightbox/js/lightbox.min.js")}}">
+</script>
+</body>
+</html>
